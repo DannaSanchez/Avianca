@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avianca - Reserva tu vuelo</title>
+    <link rel="stylesheet" href="/Styles.css">
+</head>
+<body>
+    <div class="promo-banner">
+        ✈️ ¡Acumula 25% más de millas en tus vuelos! <a href="#">Suscríbete a la promo</a> y compra solo hasta el 6 de noviembre.
+        <button class="close-banner" onclick="this.parentElement.style.display='none'">×</button>
+    </div>
+
+    <div class="top-bar">
+        <span>💬 Vianca Chat</span>
+        <span>🌐 Español</span>
+        <span>📍 Colombia (COP)</span>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">avianca</div>
+            <ul class="nav-links">
+                <li><a href="#">Reservar</a></li>
+                <li><a href="#">Ofertas y destinos</a></li>
+                <li><a href="#">Tu reserva</a></li>
+                <li><a href="#" class="check-in-btn">Check-in</a></li>
+                <li><a href="#">Información y ayuda</a></li>
+                <li><a href="#">Lifemiles</a></li>
+                <li><a href="#" class="cuenta-btn">👤 Cuenta Lifemiles</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="search-container">
+            <div class="trip-options">
+                <div class="radio-option">
+                    <input type="radio" name="trip" id="roundtrip" checked>
+                    <label for="roundtrip">Ida y vuelta</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" name="trip" id="oneway">
+                    <label for="oneway">Solo ida</label>
+                </div>
+                <button style="background: white; border: none; padding: 12px 20px; border-radius: 25px; cursor: pointer;">
+                    Comparar con millas 🔗
+                </button>
+            </div>
+
+            <div class="search-box">
+                <form class="search-fields">
+                    <div class="field-group">
+                        <label>Origen</label>
+                        <input type="text" value="Bogotá (BOG)" placeholder="Origen">
+                    </div>
+                    <div class="field-group">
+                        <label>Destino</label>
+                        <input type="text" placeholder="Destino">
+                    </div>
+                    <div class="field-group">
+                        <label>Ida</label>
+                        <input type="date" value="2025-11-04">
+                    </div>
+                    <div class="field-group">
+                        <label>Vuelta</label>
+                        <input type="date" value="2025-11-07">
+                    </div>
+                    <div class="field-group">
+                        <label>Pasajeros</label>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="search-btn">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo-section">
+        <div class="promo-content">
+            <div class="promo-image">
+                <img src="/Img/Header.jpg" alt="Mujer en la playa con maleta">
+                <div class="promo-text-overlay">
+                    <span class="acumula">Acumula</span>
+                    <span class="percentage">25%</span>
+                    <span class="de-millas">más de millas</span>
+                </div>
+            </div>
+            <div class="promo-info">
+                <h2>¡Entre más viajes,<br>más ganas!</h2>
+                <p>Acumula 25% más de millas comprando tu vuelo en cualquier tarifa.</p>
+                <button class="reserve-btn">Reserva ya</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="offers-section">
+        <div class="offers-container">
+            <div class="offers-header">
+                <h2>Ofertas desde <span>Bogotá ▼</span></h2>
+            </div>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-image" style="background-image: url('/Img/card-destino-cali.webp');"></div><div class="offer-details">
+                        <h3>Cali</h3>
+                        <p>Por trayecto desde</p>
+                        <div class="offer-price">
+                            <span class="badge">Acumula millas</span>
+                            <span class="price">COP 79.100</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-card">
+                <div class="offer-image" style="background-image: url('/Img/medellin-700x263-1.webp');"></div><div class="offer-details">
+                        <h3>Medellín</h3>
+                        <p>Por trayecto desde</p>
+                        <div class="offer-price">
+                            <span class="badge">Acumula millas</span>
+                            <span class="price">COP 80.500</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-image" style="background-image: url('/Img/vuelos-a-pereira-termales-santa-rosa-de-cabal.webp');"></div><div class="offer-details">
+                    <div class="offer-details">
+                        <h3>Pereira</h3>
+                        <p>Por trayecto desde</p>
+                        <div class="offer-price">
+                            <span class="badge">Acumula millas</span>
+                            <span class="price">COP 102.400</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="discover-link">
+                <a href="#">Descubrir más ofertas →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="info-container">
+            <h2>Prepárate para viajar</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">📋</div>
+                    <h3>Check-in online</h3>
+                    <p>Obtén tu pase de abordar y ahorra tiempo en el aeropuerto.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🔍</div>
+                    <h3>Centro de ayuda</h3>
+                    <p>Busca y encuentra información útil para resolver tus preguntas.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🌐</div>
+                    <h3>Requisitos para viajar</h3>
+                    <p>Infórmate acerca de visas, vacunas y demás documentos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="lifemiles-section">
+        <div class="lifemiles-container">
+            <h2>Conoce las novedades de Lifemiles</h2>
+            
+            <div class="lifemiles-cards">
+                <div class="lifemiles-card dark">
+                    <div>
+                        <h3>¡Dona tus millas!</h3>
+                        <p>Transformemos vidas y ecosistemas una milla a la vez</p>
+                    </div>
+                    <button>Dona ya</button>
+                </div>
+                
+                <div class="lifemiles-card dark">
+                    <div>
+                        <h3>Únete a Lifemiles plus</h3>
+                        <p>y recibe un descuento exclusivo al redimir tiquetes con avianca</p>
+                    </div>
+                    <button>Suscríbete ya</button>
+                </div>
+                
+                <div class="lifemiles-card blue">
+                    <span class="card-badge">¡OFERTA!</span>
+                    <div>
+                        <h3>Recibe hasta 10.000 millas de bienvenida con tu tarjeta de crédito</h3>
+                    </div>
+                    <button>Solicítala ya!</button>
+                </div>
+            </div>
+
+            <div class="more-info-section">
+                <h3>Más información de interés</h3>
+                <div class="more-info-grid">
+                    <div class="more-info-card">
+                        <div class="more-info-image" style="background-image: url('/Img/imagen-1.jpeg');">
+                        </div>
+                        <div class="more-info-content">
+                            <h4>Experiencia avianca</h4>
+                            <p>¡Listo para despegar! Descubre los servicios a bordo que te ofrecemos al volar con nosotros.</p>
+                        </div>
+                    </div>
+
+                    <div class="more-info-card">
+                        <div class="more-info-image" style="background-image: url('/Img/enterate-condiciones-equipaje.webp');">
+                        </div>
+                        <div class="more-info-content">
+                            <h4>Equipaje</h4>
+                            <p>Entérate de las condiciones que debes tener en cuenta al momento de preparar tu equipaje.</p>
+                        </div>
+                    </div>
+
+                    <div class="more-info-card">
+                        <div class="more-info-image" style="background-image: url('/Img/unidos-contra-el-fraude.jpg');">
+                            <div class="alert-icon">⚠️</div>
+                        </div>
+                        <div class="more-info-content">
+                            <h4>Unidos contra el fraude</h4>
+                            <p>Protege tu viaje comprando tus tiquetes y servicios adicionales en nuestros canales oficiales.</p>
+                        </div>
+                    </div>
+
+                    <div class="more-info-card">
+                        <div class="more-info-image" style="background-image: url('/Img/card_sostenibilidad.png');">
+                        </div>
+                        <div class="more-info-content">
+                            <h4>Compensa tu huella</h4>
+                            <p>Calcula y compensa la huella de carbono de tu viaje. Cada acción puede hacer la diferencia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="complement-section">
+                <h3>Complementa tu experiencia</h3>
+                <div class="complement-grid">
+                    <div class="complement-card">
+                        <div class="complement-icon">🏨</div>
+                        <h4>Reserva de hoteles</h4>
+                        <p>Cientos de alojamientos con hasta 15% DCTO te esperan en <a href="#">Booking.com.</a></p>
+                    </div>
+
+                    <div class="complement-card">
+                        <div class="complement-icon">🚗</div>
+                        <h4>Alquiler de autos</h4>
+                        <p>Movilízate a tu ritmo con hasta 15% DCTO en tu próximo destino con <a href="#">Rentacars.com.</a></p>
+                    </div>
+
+                    <div class="complement-card">
+                        <div class="complement-icon">🗼</div>
+                        <h4>Tours y excursiones</h4>
+                        <p>Descubre actividades en los principales destinos turísticos del mundo con <a href="#">Civitatis.</a></p>
+                    </div>
+
+                    <div class="complement-card">
+                        <div class="complement-icon">🎫</div>
+                        <h4>Todo en una sola reserva</h4>
+                        <p>Muy pronto podrás comprar tus tiquetes aéreos + alojamiento, auto y más en un solo lugar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="subscription-banner">
+        <div class="logo-section">
+            <div class="logo">
+                <span class="logo-text">avianca</span>
+                <div class="logo-icon"></div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>¿Estás buscando ofertas?</h2>
+            <p class="subtitle">Suscríbete y sé el primero en recibir ofertas personalizadas en tu correo.</p>
+            
+            <form class="subscription-form" onsubmit="return false;">
+                <span class="email-icon">✉</span>
+                <input type="email" placeholder="correo@mail.com" required>
+                <button type="submit" class="subscribe-btn">Suscríbete</button>
+            </form>
+
+            <p class="privacy-text">
+                Al suscribirme acepto la <a href="#">Política de Privacidad</a> y el uso de mis datos personales para recibir ofertas.
+            </p>
+        </div>
+
+        <div class="social-section">
+            <p class="social-title">¡Síguenos!</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+                <a href="#" class="social-icon" aria-label="Facebook">f</a>
+                <a href="#" class="social-icon" aria-label="YouTube">▶</a>
+                <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+            </div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
